@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			.aaa{
+				width: 100%;
+				height: 200px;
+				background: #ccc;
+				opacity: 0.5;
+				position: absolute;
+				top: 0;
+			
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http://www.baidu.com">aa</a>
+		<div class="aaa" id="aaa">
+			aaa
+		</div>
+		<script type="text/javascript">
+			var aaa=document.querySelector("#aaa")
+//			aaa.addEventListener("click",function(){
+//				this.style.display="none";
+//			})
+			aaa.addEventListener("touchmove",function(ev){
+				console.log("touchmove"+ev.touches.length);
+				this.innerHTML=ev.touches.length;
+			})
+//			aaa.addEventListener("touchend",function(){
+//				this.style.display="none"
+//			})
+//			aaa.addEventListener("touchstart",function(ev){
+//				ev.preventDefault();
+//			})
+		</script>
+	</body>
+</html>
