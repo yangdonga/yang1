@@ -64,14 +64,14 @@
 			list.addEventListener("touchmove",function(ev){
 				
 				list.style.left=(ev.changedTouches[0].pageX-disx)+leftp+"px";
-				//console.log(list.style.left);
+				
 			})
 				list.addEventListener("touchend",function(ev){
 				
 			    var n=Math.round(this.offsetLeft/w);
-			    console.log(this.offsetLeft);
+			    
 			    list.style.left=n*w+"px";
-				console.log(list.style.left);
+				
 			})
 			
 		</script>
